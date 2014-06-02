@@ -4,7 +4,7 @@ from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
 
 # configuration
-DATABASE = '/tmp/hello.db'
+DATABASE = '/tmp/myPortfolio.db'
 DEBUG = True
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
@@ -16,7 +16,7 @@ PASSWORD = 'default'
 app = Flask(__name__)
 
 #app.config.from_object(__name__)
-app.config.from_envvar('hello_settings', silent=True)
+app.config.from_envvar('myPortfolio_settings', silent=True)
 
 #connect to database
 def connect_db():
