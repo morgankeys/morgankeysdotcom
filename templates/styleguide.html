@@ -1,39 +1,52 @@
 <head>
+	<title>My personal style-guide</title>
+	
+	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="static/bootstrap-responsive.min.css" />
-	<link rel="stylesheet" type="text/css" href="static/hello_style.css" />
-	<link rel="stylesheet" type="text/css" href="static/hello_style.css" />
-	<link rel="stylesheet" type="text/css" href="static/portfolio.css" />
-	<title>My personal style-guide</title>
-	<style>
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="static/style.css" />
+	
+	<!-- Scripts -->
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script>
-		function run(){
-			$('#larrow').click(function(){
-				alert('hit!');
-			});
-
-			$(window).scroll(function(){
-				var scrollVal = (-80-$('body').scrollTop())*.75+'px';
-				//console.log($('body').scrollTop());
-				console.log(scrollVal);
-				$('#door-pic').css('background-position-y',scrollVal);
-			});
-		}
-	</script>
+	
 </head>
 <body>
+	<div id="swatches" class="container">
+		<div class="col-md-4">
+			<div id="orange" class="swatch"></div>
+			<p>
+				Orange<br>
+				#ff9933<br>
+				rgb(255,153,51)
+			</p>
+		</div>
+		<div class="col-md-4">
+			<div id="blue" class="swatch"></div>
+			<p>
+				Blue <br>
+				#336699<br>
+				rgb(51,102,153)
+			</p>
+		</div>
+		<div class="col-md-4">
+			<div id="red" class="swatch"></div>
+			<p>
+				Red<br>
+				#ff3333<br>
+				rgb(255,51,51)
+			</p>
+		</div>
+	</div>
+
 	<div class="container">
 		<div class="col-md-12">
-			<h1>H1 heading</h1>
-			<h2>H2 heading</h2>
-			<h3>H3 heading</h3>
-			<h4>H1 heading</h4>
-			<h5>H1 heading</h5>
-			<h6>H1 heading</h6>
+			<h1>H1 heading Raleway 55px</h1>
+			<h2>H2 heading Raleway 36px</h2>
+			<h3>H3 heading Raleway 28px</h3>
+			<h4>H4 heading Helvetica 21px</h4>
+			<h5>H5 heading Helvetica 15px</h5>
+			<h6>H6 heading Helvetica Italic 15px</h6>
 			<div class="divider"></div>
 			<a>This is a link</a>
 			<p>This is a paragraph with text.  Cue meaningless text: Worked with a team to design and prototype a pervasive (ubicomp) application for the University of Michigan’s brand-new North Quad Residential complex. Used contextual inquiry and “speed-dating” techniques to understand users and the physical environment. The project required us to design for an ecosystem of wall-displays, smartphones, and web-apps. Presented to community directors and developed concept videos (see below for final video). Final prototype featured live QR-codes and semi-responsive adaptive text.</p>

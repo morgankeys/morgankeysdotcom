@@ -1,0 +1,120 @@
+/*rgb(255,153,51)*/
+/*rgb(255,51,51)*/
+/*rgb(51,102,153)*/
+/*rgb(51,51,51)*/
+/*rgb(255,255,255)*/
+/*rgb(255,153,51)*/
+/*rgb(51,102,153)*/
+/*#0066cc;*/
+/* Begin global styles */
+* {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  outline: none; }
+
+body {
+  background-color: #333333;
+  cursor: default; }
+
+h1 {
+  font: 55px/41px Raleway, Helvetica, sans-serif;
+  padding-top: 21px;
+  font-weight: 100;
+  color: white;
+  margin: 45px 0px 45px 0px; }
+
+h2 {
+  font: 36px Raleway, Helvetica, sans-serif;
+  color: white;
+  margin: 30px 0px 30px 0px; }
+
+h3 {
+  font: 28px/42px Raleway, Helvetica, sans-serif;
+  color: white;
+  margin: 30px 0px 30px 0px; }
+
+h4 {
+  font: 21px Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  margin: 15px 0px 15px 0px; }
+
+h5 {
+  font: 15px Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  margin: 15px 0px 15px 0px; }
+
+h6 {
+  font: 15px Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  color: white;
+  margin: 15px 0px 15px 0px; }
+
+p, ul {
+  font: 15px/24px Helvetica, sans-serif;
+  color: white; }
+
+p:active {
+  cursor: text; }
+
+p.emphasis {
+  font: 21px Georgia, serif;
+  font-style: italic;
+  color: white;
+  margin: 30px 0px 30px 1em; }
+
+aside {
+  font: 15px Georgia, serif;
+  font-style: italic;
+  color: #666; }
+
+a {
+  color: #ff9933;
+  text-decoration: none; }
+
+a:hover {
+  color: #336699;
+  text-decoration: none;
+  cursor: pointer; }
+
+a:visited {
+  color: #ff9933;
+  text-decoration: none; }
+
+.divider {
+  border-bottom: solid 1px white;
+  height: 1ex;
+  margin-top: 3ex;
+  margin-bottom: 3ex;
+  width: 100%; }
+
+button {
+  background-color: #ff9933;
+  border-radius: 3px;
+  box-shadow: none;
+  border: none;
+  padding: 10px;
+  outline: none;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold; }
+  button:active {
+    opacity: .90;
+    outline: none; }
+
+/* End global styles */
+/*For style-guide page*/
+#swatches div {
+  padding: 20px; }
+#swatches .swatch {
+  height: 60px;
+  color: white;
+  padding: 30px 0px 0px 20px; }
+#swatches #orange {
+  background-color: #ff9933; }
+#swatches #blue {
+  background-color: #336699; }
+#swatches #red {
+  background-color: #ff3333; }

@@ -1,0 +1,147 @@
+$myOrange:#ff9933; 			/*rgb(255,153,51)*/
+$myOrange_rgba: rgba(255, 153, 51, 1.0);
+$myOrange_hsl: hsl(30, 100%, 60%);
+
+$myRed:#ff3333;				/*rgb(255,51,51)*/
+$myRed_rgb: rgba(255, 51, 51, 1.0);
+$myRed_hsl: hsl(0, 100%, 60%);
+
+$myBlue:#336699;			/*rgb(51,102,153)*/
+$myBlue_rgba: rgba(51, 102, 153, 1.0);
+$myRed_hsl: hsl(210, 50%, 40%);
+
+$black: #333;
+$white: #fff;
+
+$bg_color: #333;			/*rgb(51,51,51)*/
+$text_color: #fff;			/*rgb(255,255,255)*/
+$link_color: #ff9933; 		/*rgb(255,153,51)*/
+$link_visited: #336699;		/*rgb(51,102,153)*/
+
+$base_padding:10px;
+
+$primary_font: Raleway, Helvetica, sans-serif;
+$secondary_font: Helvetica, sans-serif;
+$tertiary_font: Georgia, serif;
+
+/*#0066cc;*/
+
+/* Begin global styles */ 
+* {
+	font-smoothing:antialiased;
+	-webkit-font-smoothing:antialiased;
+	outline:none;
+}
+body{
+	background-color: $bg_color;
+	cursor: default;
+}
+h1{
+	font: 55px/41px $primary_font;
+	padding-top: 21px;
+	font-weight: 100;
+	color: $text_color;
+	margin:45px 0px 45px 0px;
+}
+h2{
+	font: 36px $primary_font;
+	color: $text_color;
+	margin:30px 0px 30px 0px;
+}
+h3{
+	font: 28px/42px $primary_font;
+	color: $text_color;
+	margin:30px 0px 30px 0px;
+}
+h4{
+	font: 21px $secondary_font;
+	font-weight: bold;
+	color: $text_color;
+	margin:15px 0px 15px 0px;
+}
+h5{
+	font: 15px $secondary_font;
+	font-weight: bold;
+	color: $text_color;
+	margin:15px 0px 15px 0px;
+}
+h6{
+	font: 15px $secondary_font;
+	font-style: italic;
+	font-weight: normal;
+	color: $text_color;
+	margin:15px 0px 15px 0px;
+}
+p, ul{
+	font: 15px/24px $secondary_font;
+	color: $text_color;
+}
+p:active{
+	cursor: text;
+}
+
+p.emphasis{
+	font: 21px $tertiary_font;
+	font-style: italic;
+	color: $text_color/(2/3);
+	margin:30px 0px 30px 1em;
+}
+aside{
+	font: 15px $tertiary_font;
+	font-style: italic;
+	color: #666;
+}
+a{
+	color: $link_color;
+	text-decoration: none;
+}
+a:hover{
+	color: $myBlue;
+	text-decoration:none;
+	cursor: pointer;
+}
+a:visited{
+	color: $link_color;
+	text-decoration: none;
+}
+
+.divider{
+	border-bottom: solid 1px $text_color;
+	height: 1ex;
+	margin-top:3ex;
+	margin-bottom:3ex;
+	width: 100%;
+}
+
+button{
+	background-color: $myOrange;
+	border-radius: 3px;
+	box-shadow: none;
+	border: none;
+	padding: $base_padding;
+	outline: none;
+	color: $white;
+	font-family: $secondary_font;
+	font-weight: bold;
+	&:active{
+		opacity:.90;
+		outline: none;
+	}
+}
+/* End global styles */ 
+
+/*For style-guide page*/
+#swatches{
+	div{
+		padding:20px;
+	}
+	.swatch{
+		height: 60px;
+		color:white;
+		padding: 30px 0px 0px 20px;
+	}
+	#orange{ background-color: $myOrange;}
+	#blue{ background-color: $myBlue;}
+	#red{ background-color: $myRed;}
+
+}
