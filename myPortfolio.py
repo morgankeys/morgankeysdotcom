@@ -1,3 +1,7 @@
+#Author: Morgan Keys
+#Email: morgan.keys@gmail.com
+#Adapted from Flask tutorials. See: http://flask.pocoo.org/
+
 # all the imports
 import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, \
