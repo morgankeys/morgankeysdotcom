@@ -16,6 +16,11 @@ $myBlue:#336699;			/*rgb(51,102,153)*/
 $myBlue_rgba: rgba(51, 102, 153, 1.0);
 $myBlue_hsl: hsl(210, 50%, 40%);
 
+$bg_color: #333;			/*rgb(51,51,51)*/
+$text_color: #fff;			/*rgb(255,255,255)*/
+$link_color: #ff9933; 		/*rgb(255,153,51)*/
+$link_visited: #336699;		/*rgb(51,102,153)*/
+
 @mixin extendleft{
 	padding-left: 3000px;
 	margin-left: -3000px;
@@ -30,7 +35,7 @@ $myBlue_hsl: hsl(210, 50%, 40%);
 	width: 100%;
 	z-index:-1;
 	display: inline-block;
-	background: #fff url("/static/imgs/door_pic_small.jpg") no-repeat center;
+	background: $bg_color url("/static/imgs/door_pic_small.jpg") no-repeat center;
 	background-size: cover; 
 }
 
@@ -100,10 +105,10 @@ body{
 		}
 	}
 	section{
-		padding: 90px 0px;
-				iframe{
-			
+		&:first-child{
+			padding-top: 90px;
 		}
+		padding: 200px 0px;
 		/* 1.0 Normal size */
 		h3,p{
 			margin: 0px 0px 20px 0px;
@@ -160,10 +165,30 @@ body{
 }
 
 #footer_row{
-	h3{
-		display: inline;
-		font-size: 21px;
-		padding:0px 0px 0px 20px;
-		text-align: right;
-	}			
+	opacity: .5;
+	padding-top:400px;
+	padding-bottom:100px;
+	text-align: center;
+	aside{
+		color:#fff;
+		p.emphasis{
+			margin:30px 0px;
+		}
+	}
+}
+
+#btm_links{
+	position: fixed;
+	bottom: 80px;
+	width: 100%;
+	text-align: center;
+	ul{
+		li{
+			display: inline;
+			margin-right: 21px;
+			a:hover{
+				color: $myBlue;
+			}
+		}
+	}
 }

@@ -5,12 +5,16 @@
 /*rgb(255,153,51)*/
 /*rgb(255,51,51)*/
 /*rgb(51,102,153)*/
+/*rgb(51,51,51)*/
+/*rgb(255,255,255)*/
+/*rgb(255,153,51)*/
+/*rgb(51,102,153)*/
 #door-pic {
   height: 100%;
   width: 100%;
   z-index: -1;
   display: inline-block;
-  background: white url("/static/imgs/door_pic_small.jpg") no-repeat center;
+  background: #333333 url("/static/imgs/door_pic_small.jpg") no-repeat center;
   background-size: cover; }
 
 body {
@@ -67,9 +71,11 @@ body {
     #shelf #work_highlights h2 {
       display: inline-block; }
   #shelf section {
-    padding: 90px 0px;
+    padding: 200px 0px;
     /* 1.0 Normal size */
     /* For thin screens sizes */ }
+    #shelf section:first-child {
+      padding-top: 90px; }
     #shelf section h3, #shelf section p {
       margin: 0px 0px 20px 0px; }
     #shelf section img {
@@ -111,8 +117,23 @@ body {
       #shelf section iframe {
         margin-top: 30px; } }
 
-#footer_row h3 {
-  display: inline;
-  font-size: 21px;
-  padding: 0px 0px 0px 20px;
-  text-align: right; }
+#footer_row {
+  opacity: .5;
+  padding-top: 400px;
+  padding-bottom: 100px;
+  text-align: center; }
+  #footer_row aside {
+    color: #fff; }
+    #footer_row aside p.emphasis {
+      margin: 30px 0px; }
+
+#btm_links {
+  position: fixed;
+  bottom: 80px;
+  width: 100%;
+  text-align: center; }
+  #btm_links ul li {
+    display: inline;
+    margin-right: 21px; }
+    #btm_links ul li a:hover {
+      color: #336699; }
