@@ -30,22 +30,13 @@ $myBlue_hsl: hsl(210, 50%, 40%);
 	width: 100%;
 	z-index:-1;
 	display: inline-block;
-	background: #fff url("/static/imgs/door_pic_small.jpg") no-repeat;
-	background-position-x: center;
-	background-position-y: top;
+	background: #fff url("/static/imgs/door_pic_small.jpg") no-repeat center;
 	background-size: cover; 
-	
-	
-	a{
-		visibility:hidden;
-		position:fixed;
-		top:78%;
-		left:49%;
-	}
 }
 
 body{
 	overflow-x:hidden;
+	height: 100% !important; //Dirty hack to prevent Skrollr from screwing up height on init.
 }
 
 #color_band{
@@ -80,13 +71,7 @@ body{
 	/*background: rgba(0,0,0,.25);*/
 	@include extendright;
 	@include extendleft;
-	
 
-
-
-	h1{
-		
-	}
 	ul{
 		margin: 80px 0px 0px 0px;
 		li{
@@ -147,6 +132,7 @@ body{
 		iframe{
 			background-color: rgba(0,0,0,.75);
 			box-shadow: 0px 0px 21px rgba(255,255,255, 0.2); /*On black bg*/
+			border:none;
 		}
 		&:nth-child(2n){
 			background-color: #fff;

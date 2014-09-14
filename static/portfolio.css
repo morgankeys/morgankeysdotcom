@@ -1,3 +1,7 @@
+/*
+#Author: Morgan Keys
+#Email: morgan.keys@gmail.com
+*/
 /*rgb(255,153,51)*/
 /*rgb(255,51,51)*/
 /*rgb(51,102,153)*/
@@ -6,18 +10,12 @@
   width: 100%;
   z-index: -1;
   display: inline-block;
-  background: white url("/static/imgs/door_pic_small.jpg") no-repeat;
-  background-position-x: center;
-  background-position-y: top;
+  background: white url("/static/imgs/door_pic_small.jpg") no-repeat center;
   background-size: cover; }
-  #door-pic a {
-    visibility: hidden;
-    position: fixed;
-    top: 78%;
-    left: 49%; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100% !important; }
 
 #color_band {
   position: fixed;
@@ -93,7 +91,8 @@ body {
     #shelf section iframe {
       background-color: rgba(0, 0, 0, 0.75);
       box-shadow: 0px 0px 21px rgba(255, 255, 255, 0.2);
-      /*On black bg*/ }
+      /*On black bg*/
+      border: none; }
     #shelf section:nth-child(2n) {
       background-color: #fff;
       /*On white bg*/
