@@ -107,7 +107,9 @@ body {
     @media (max-width: 990px) {
       #shelf section h3 {
         margin-top: 30px;
-        line-height: 32px; } }
+        line-height: 32px; }
+      #shelf section iframe {
+        margin-top: 30px; } }
 
 #footer_row {
   position: fixed; }
