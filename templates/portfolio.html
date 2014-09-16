@@ -1,12 +1,12 @@
 <html>
 <head>
 	<title>morgan keys</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 	
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="static/style.css" />
 	<link rel="stylesheet" type="text/css" href="static/portfolio.css"/>
-
 
 	<!-- Still deciding what to do with these...-->
 	<!-- script type="text/javscript" src="static/js/portfolio.js"></script -->
@@ -106,9 +106,11 @@
 			</div>
 
 			<div id="footer_row" class="container">
-				<div class="col-md-12">
-					<aside>This site was hand crafted by yours-truly. Controller built with <a href="https://github.com/mitsuhiko/flask">Flask</a>. Front-end built with <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://github.com/jquery/">Jquery</a>, and <a href="https://github.com/Prinzhorn/skrollr">Skrollr</a>. Take at look at the code <a href="https://github.com/morgankeys/myflaskportfolio">here</a>.
-					<p class="emphasis">Thanks.</p>
+				<div class="row">
+					<aside class="col-md-10 col-md-offset-1">
+						<p class="emphasis">This site was hand crafted by yours-truly. Controller built with <a href="https://github.com/mitsuhiko/flask">Flask</a>. Front-end built with <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://github.com/jquery/">Jquery</a>, and <a href="https://github.com/Prinzhorn/skrollr">Skrollr</a>. Take at look at the code <a href="https://github.com/morgankeys/myflaskportfolio">here</a>.</p>
+						<p class="emphasis">Also, special thanks to <a href="http://twitter.com/@iamaaronmartin">Aaron Martin</a> for photography and visual-design inspiration.</p>
+						<p class="emphasis bg">Thanks!</p>
 					</aside>
 				</div>
 			</div>
@@ -120,6 +122,17 @@
 				<li><a href="https://www.linkedin.com/in/morgankeys">LinkedIn</a></li>
 				<li><a href="https://www.dropbox.com/s/2gt7lk8dbhbpdg2/mkeys_resume_2014.pdf" title="Download my resume">Resume</a></li>
 			</ul>
+		</div>
+	</div>
+
+	<!-- an experimental lightbox -->
+	<div id="lb_reporting" class="lightbox">
+		<div id="lb_container" class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<img src="/static/imgs/usageReport_improve_cropped.png">
+				</div>
+			</div>
 		</div>
 	</div>
 
