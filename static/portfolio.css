@@ -85,7 +85,7 @@ body {
       height: auto;
       width: 100%;
       text-align: center;
-      margin: 40px auto; }
+      margin: auto; }
     #shelf section .videoWrapper {
       position: relative;
       padding-bottom: 42.86%;
@@ -120,7 +120,9 @@ body {
         margin-top: 30px;
         line-height: 32px; }
       #shelf section iframe {
-        margin-top: 40px; } }
+        margin-top: 40px; }
+      #shelf section img {
+        margin: 40px auto; } }
 
 #footer_row {
   opacity: .5;

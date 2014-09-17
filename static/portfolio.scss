@@ -131,7 +131,7 @@ body{
 			height:auto;
 			width:100%;
 			text-align: center;
-			margin: 40px auto;
+			margin: auto;
 		}
 
 		.videoWrapper {
@@ -175,6 +175,9 @@ body{
 			}
 			iframe{
 				margin-top:40px;
+			}
+			img{
+				margin: 40px auto;
 			}
 		}
 	}
