@@ -78,11 +78,14 @@ body {
       padding-top: 90px; }
     #shelf section h3, #shelf section p {
       margin: 0px 0px 20px 0px; }
+    #shelf section ul {
+      padding-left: 16px;
+      margin-bottom: 30px; }
     #shelf section img {
       height: auto;
       width: 100%;
       text-align: center;
-      margin: auto; }
+      margin: 40px auto; }
     #shelf section .videoWrapper {
       position: relative;
       padding-bottom: 42.86%;
@@ -110,12 +113,14 @@ body {
         color: #333; }
       #shelf section:nth-child(2n) iframe {
         box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.2); }
+      #shelf section:nth-child(2n) ul li {
+        color: #333333; }
     @media (max-width: 990px) {
       #shelf section h3 {
         margin-top: 30px;
         line-height: 32px; }
       #shelf section iframe {
-        margin-top: 30px; } }
+        margin-top: 40px; } }
 
 #footer_row {
   opacity: .5;
@@ -131,7 +136,7 @@ body {
         font-size: 21px; }
 
 #btm_links {
-  position: fixed;
+  position: relative;
   bottom: 80px;
   width: 100%;
   text-align: center; }
