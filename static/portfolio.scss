@@ -89,13 +89,6 @@ body{
 		font-size: 44px;
 	}
 
-	/*Shrink header font-size on mobile so that it doesn't wrap, suck.*/
-	@media (max-width:768px){ 
-		h1{
-			font-size:44px;
-		}
-	}
-
 	ul{
 		margin: 80px 0px 0px 0px;
 		li{
