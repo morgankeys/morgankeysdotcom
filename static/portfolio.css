@@ -57,6 +57,11 @@ body {
       margin: 0px 0px 0px 21px; }
       #header_row ul li a:hover {
         color: #336699; }
+  @media (max-width: 990px) {
+    #header_row ul {
+      margin: 40px 0px 0px 0px; }
+      #header_row ul li {
+        margin: 0px 21px 0px 0px; } }
 
 #shelf {
   background-color: #333;

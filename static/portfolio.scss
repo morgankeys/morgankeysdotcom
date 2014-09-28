@@ -96,6 +96,14 @@ body{
 			}
 		}
 	}
+	@media (max-width:990px){
+		ul{
+			margin: 40px 0px 0px 0px;
+			li{
+				margin: 0px 21px 0px 0px;
+		}
+	}
+	}
 }
 
 #shelf{	
@@ -172,10 +180,8 @@ body{
 			}
 		}
 		/* For thin screens sizes */
-		//@media (max-aspect-ratio:1/1){
 		@media (max-width:990px){
 			h3{
-				//color:red;
 				margin-top: 30px;
 				line-height: 32px;
 			}
