@@ -32,5 +32,9 @@ def portfolio():
 def styleguide():
 	return render_template('styleguide.html')
 
+@app.route('/palantir')
+def palantir():
+	return render_template('portfolio_for_palantir.html')
+
 if __name__ == '__main__':
     app.run()
