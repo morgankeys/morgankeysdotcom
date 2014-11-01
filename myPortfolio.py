@@ -26,7 +26,7 @@ env = Environment(loader=PackageLoader('myPortfolio', 'templates'))
 @app.route('/')
 @app.route('/about')
 def portfolio():
-	return render_template('portfolio.html')
+	return render_template('default_sections.html')
 
 @app.route('/style')
 def styleguide():
@@ -34,7 +34,19 @@ def styleguide():
 
 @app.route('/palantir')
 def palantir():
-	return render_template('portfolio_for_palantir.html')
+	return render_template('palantir_sections.html')
+
+#404/bad-link
+@app.route('/test_404_error')
+@app.errorhandler(404)
+def page_not_found_404(e):
+    return render_template('error.html'), 404
+
+#500/server error
+@app.route('/test_500_error')
+@app.errorhandler(500)
+def page_not_found_500(e):
+    return render_template('error.html'), 500
 
 if __name__ == '__main__':
     app.run()
