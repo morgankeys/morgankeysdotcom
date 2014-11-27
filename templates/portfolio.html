@@ -12,19 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="static/portfolio.css"/>
 {% endblock %}
 {% block page_scripts %}
+	<script src="{{ url_for('static', filename='js/portfolio.js') }}" type="text/javascript"></script>
 	<script>
-		function askme(topic){
-			var subject;
-			//console.log($(this));
-			if (topic == null){
-				//var topic = '?subject=Regarding your experience with '+ $(this).children('h3').text();
-				//console.log($(this));
-				subject = null;
-			}else{
-				subject = '?subject=Regarding your experience with '+ topic
-			}
-			window.location.href='mailto:morgankeys+portfolio@gmail.com'+subject;
-		}
+
 	</script>
 {% endblock %}
 {% block page_body %}
@@ -48,9 +38,9 @@
 				<div id="header_row_inner" class="container">
 				<div class="col-md-8"><h1 id="skrollrtest">morgan keys</h1></div>
 				<ul class="col-md-4 clearfix">
-					<li><a href="http://twitter.com/@morgankeys">@morgankeys</a></li>
-					<li><a href="https://www.linkedin.com/in/morgankeys">LinkedIn</a></li>
-					<li><a href="https://www.dropbox.com/s/2gt7lk8dbhbpdg2/mkeys_resume_2014.pdf" title="Download my resume">Resume</a></li>
+					<li><a id="twitter_link" href="http://twitter.com/@morgankeys">@morgankeys</a></li>
+					<li><a id="linkedin_link" href="https://www.linkedin.com/in/morgankeys">LinkedIn</a></li>
+					<li><a id="resume_link" href="https://www.dropbox.com/s/2gt7lk8dbhbpdg2/mkeys_resume_2014.pdf" title="Download my resume">Resume</a></li>
 				</ul>
 				</div>
 			</div>
@@ -63,7 +53,7 @@
 			<div id="footer_row" class="container">
 				<div class="row">
 					<aside class="col-md-10 col-md-offset-1">
-						<p class="emphasis">This site was hand crafted by yours-truly. Controller built with <a href="https://github.com/mitsuhiko/flask">Flask</a>. Front-end built with <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://github.com/jquery/">Jquery</a>, and <a href="https://github.com/Prinzhorn/skrollr">Skrollr</a>. Take at look at the code <a href="https://github.com/morgankeys/myflaskportfolio">here</a>.</p>
+						<p class="emphasis">This site was hand crafted by yours-truly. Controller built with <a href="https://github.com/mitsuhiko/flask">Flask</a>. Front-end built with <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://github.com/jquery/">Jquery</a>, and <a href="https://github.com/Prinzhorn/skrollr">Skrollr</a>. Take at look at the code <a href="https://github.com/morgankeys/myflaskportfolio/tree/heroku_branch">here</a>.</p>
 						<p class="emphasis">Also, special thanks to <a href="http://twitter.com/@iamaaronmartin">Aaron Martin</a> for photography and visual-design inspiration.</p>
 						<p class="emphasis bg">Thanks!</p>
 					</aside>
