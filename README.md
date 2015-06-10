@@ -1,6 +1,6 @@
-myflaskportfolio
+morgankeys.com
 ================
 
 My personal portfolio site built on flask.
 
-You can see it running live here: http://morgankeys-portfolio.herokuapp.com/
+You can see it running live here: http://morgankeys.com/
