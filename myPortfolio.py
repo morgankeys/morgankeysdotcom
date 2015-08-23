@@ -32,10 +32,6 @@ def portfolio():
 def styleguide():
 	return render_template('styleguide.html')
 
-@app.route('/palantir')
-def palantir():
-	return render_template('palantir_sections.html')
-
 #404/bad-link
 @app.route('/test_404_error')
 @app.errorhandler(404)
