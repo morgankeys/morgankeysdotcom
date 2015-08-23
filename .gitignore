@@ -3,3 +3,4 @@
 *.ai
 venv/
 static/oldimgs
+.DS_Store
