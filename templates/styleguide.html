@@ -14,6 +14,9 @@
 		body{
 			height:1200px;
 		}
+		.buttons {
+			
+		}
 	</style>
 {% endblock %}
 {% block page_scripts %}
@@ -21,9 +24,9 @@
 {% endblock %}
 {% block page_body %}
 <body>
-	<div id="swatches" class="container">
+	<div class="swatches container">
 		<div class="col-md-4">
-			<div id="orange" class="swatch"></div>
+			<div class="orange swatch"></div>
 			<p>
 				Orange<br>
 				#ff9933<br>
@@ -31,7 +34,7 @@
 			</p>
 		</div>
 		<div class="col-md-4">
-			<div id="blue" class="swatch"></div>
+			<div class="blue swatch"></div>
 			<p>
 				Blue <br>
 				#336699<br>
@@ -39,12 +42,17 @@
 			</p>
 		</div>
 		<div class="col-md-4">
-			<div id="red" class="swatch"></div>
+			<div class="red swatch"></div>
 			<p>
 				Red<br>
 				#ff3333<br>
 				rgb(255,51,51)
 			</p>
+		</div>
+	</div>
+	<div class="container buttons">
+		<div class="col-md-12">
+		<button>This is a button</button>
 		</div>
 	</div>
 	<div class="container">

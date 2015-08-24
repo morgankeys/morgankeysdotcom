@@ -9,7 +9,7 @@
 /*rgb(255,255,255)*/
 /*rgb(255,153,51)*/
 /*rgb(51,102,153)*/
-#door-pic {
+.door-pic {
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -21,7 +21,7 @@ body {
   overflow-x: hidden;
   height: 100% !important; }
 
-#color_band {
+.color_band {
   position: fixed;
   top: 0;
   left: 0;
@@ -31,41 +31,42 @@ body {
   z-index: 10;
   background-image: linear-gradient(90deg, #336699 30%, #ff3333 100%); }
 
-#headliner {
+.headliner {
   position: relative;
   top: 20%;
   text-align: center;
   margin: auto;
   background-color: transparent; }
-  #headliner h1 {
+  .headliner h1 {
     font-size: 44px;
     margin: 0px 0px 25px 0px; }
-  #headliner h3 {
+  .headliner h3 {
     font-size: 21px;
     margin-top: 20px; }
 
-#header_row {
+.header_row {
   /*background: rgba(0,0,0,.25);*/
   padding-right: 3000px;
   margin-right: -3000px;
   padding-left: 3000px;
   margin-left: -3000px; }
-  #header_row h1 {
-    font-size: 44px; }
-  #header_row ul {
+  .header_row h1 {
+    font-size: 44px;
+    padding-top: 21px; }
+  .header_row ul {
     margin: 80px 0px 0px 0px; }
-    #header_row ul li {
+    .header_row ul li {
       display: inline;
       margin: 0px 0px 0px 21px; }
-      #header_row ul li a:hover {
+      .header_row ul li a:hover {
         color: #336699; }
   @media (max-width: 992px) {
-    #header_row ul {
+    .header_row ul {
       margin: 40px 0px 0px 0px; }
-      #header_row ul li {
+      .header_row ul li {
         margin: 0px 21px 0px 0px; } }
 
-#shelf {
+.shelf {
   background-color: #333;
   padding-right: 3000px;
   margin-right: -3000px;
@@ -73,89 +74,93 @@ body {
   margin-left: -3000px;
   position: relative;
   color: white; }
-  #shelf #work_highlights {
+  .shelf .work_highlights {
     position: relative; }
-    #shelf #work_highlights h2 {
+    .shelf .work_highlights h2 {
       display: inline-block; }
-  #shelf section {
+  .shelf section {
     padding: 200px 0px;
     /* 1.0 Normal size */
     /* For thin screens sizes */ }
-    #shelf section:first-child {
+    .shelf section:first-child {
       padding-top: 90px; }
-    #shelf section h3, #shelf section p {
+    .shelf section .carousel .arrow {
+      font-size: 32px; }
+    .shelf section .carousel .item {
+      height: 550px; }
+    .shelf section h3, .shelf section p {
       margin: 0px 0px 20px 0px; }
-    #shelf section ul {
+    .shelf section ul {
       padding-left: 16px;
       margin-bottom: 30px; }
-    #shelf section img {
+    .shelf section img {
       height: auto;
       width: 100%;
       text-align: center;
       margin: auto; }
-    #shelf section .videoWrapper {
+    .shelf section .videoWrapper {
       position: relative;
       padding-bottom: 42.85%;
       /* 21:9  16:9 = 56.25%*/
       height: 0; }
-    #shelf section .videoWrapper iframe {
+    .shelf section .videoWrapper iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%; }
-    #shelf section .visual {
+    .shelf section .visual {
       /*top:50%;
       -webkit-transform:translateY(50%);*/ }
-    #shelf section iframe {
+    .shelf section iframe {
       background-color: rgba(0, 0, 0, 0.75);
       box-shadow: 0px 0px 21px rgba(255, 255, 255, 0.2);
       /*On black bg*/
       border: none; }
-    #shelf section:nth-child(2n) {
+    .shelf section:nth-child(2n) {
       background-color: #fff;
       /*On white bg*/
       padding-left: 3000px;
       margin-left: -3000px;
       padding-right: 3000px;
       margin-right: -3000px; }
-      #shelf section:nth-child(2n) h3, #shelf section:nth-child(2n) p {
+      .shelf section:nth-child(2n) h3, .shelf section:nth-child(2n) p {
         color: #333; }
-      #shelf section:nth-child(2n) iframe {
+      .shelf section:nth-child(2n) iframe {
         box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.2); }
-      #shelf section:nth-child(2n) ul li {
+      .shelf section:nth-child(2n) ul li {
         color: #333333; }
     @media (max-width: 992px) {
-      #shelf section h3 {
+      .shelf section h3 {
         margin-top: 30px;
         line-height: 32px; }
-      #shelf section iframe {
+      .shelf section iframe {
         margin-top: 40px; }
-      #shelf section img {
+      .shelf section img {
         margin: 40px auto; } }
 
-#footer_row {
+.footer_row {
   opacity: .5;
   padding-top: 400px;
   padding-bottom: 100px;
   text-align: center; }
-  #footer_row aside {
+  .footer_row aside {
     color: #fff; }
-    #footer_row aside p.emphasis {
+    .footer_row aside p.emphasis {
       margin: 30px 0px;
       font-size: 15px; }
-      #footer_row aside p.emphasis.bg {
+      .footer_row aside p.emphasis.bg {
         font-size: 21px; }
 
-#btm_links {
+.btm_links {
   position: relative;
   bottom: 80px;
   width: 100%;
   text-align: center; }
-  #btm_links ul li {
+  .btm_links ul li {
     display: inline;
     margin-right: 21px; }
-    #btm_links ul li a:hover {
+    .btm_links ul li a:hover {
       color: #336699; }
 
 .lightbox {

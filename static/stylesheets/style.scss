@@ -43,7 +43,6 @@ body{
 }
 h1{
 	font: 55px/41px $primary_font;
-	padding-top: 21px;
 	font-weight: 100;
 	color: $text_color;
 	margin:45px 0px 45px 0px;
@@ -133,7 +132,7 @@ button{
 /* End global styles */ 
 
 /*For style-guide page*/
-#swatches{
+.swatches{
 	div{
 		padding:20px;
 	}
@@ -142,8 +141,8 @@ button{
 		color:white;
 		padding: 30px 0px 0px 20px;
 	}
-	#orange{ background-color: $myOrange;}
-	#blue{ background-color: $myBlue;}
-	#red{ background-color: $myRed;}
+	.orange{ background-color: $myOrange;}
+	.blue{ background-color: $myBlue;}
+	.red{ background-color: $myRed;}
 
 }

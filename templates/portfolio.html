@@ -19,10 +19,10 @@
 {% endblock %}
 {% block page_body %}
 <body data-start="height:100%;">
-	<div id="color_band"></div>
+	<div class="color_band"></div>
 	<div id="skrollr-body">
-		<div id="door-pic" data-top="background-position-y:0px;" data-top-bottom="background-position-y[sqrt]:-150px;">
-			<div id="headliner" class="container" data-start="top:25%; opacity:1.0;" data-100="top[sqrt]:0%; opacity:0.0;">
+		<div class="door-pic" data-top="background-position-y:0px;" data-top-bottom="background-position-y[sqrt]:-150px;">
+			<div  class="headliner container" data-start="top:25%; opacity:1.0;" data-100="top[sqrt]:0%; opacity:0.0;">
 				<div class="col-md-8 col-md-offset-2">
 					<h1>Hi, I'm Morgan.</h1>
 					<h3>I'm a product designer who loves decision science, complex adaptive systems, and people. Most of all, people. Take a look around and then let's chat.
@@ -32,25 +32,25 @@
 			</div>
 		</div>
 
-		<div id="shelf" data-bottom-top="top:0px"  data-top-top="top[sqrt]:-400px">
+		<div class="shelf" data-bottom-top="top:0px"  data-top-top="top[sqrt]:-400px">
 
-			<div id="header_row">
-				<div id="header_row_inner" class="container">
+			<div class="header_row">
+				<div class="header_row_inner container">
 				<div class="col-md-8"><h1 id="skrollrtest">morgan keys</h1></div>
 				<ul class="col-md-4 clearfix">
-					<li><a id="twitter_link" href="http://twitter.com/@morgankeys">@morgankeys</a></li>
-					<li><a id="linkedin_link" href="https://www.linkedin.com/in/morgankeys">LinkedIn</a></li>
-					<li><a id="resume_link" href="https://www.dropbox.com/s/2gt7lk8dbhbpdg2/mkeys_resume_2014.pdf" title="Download my resume">Resume</a></li>
+					<li><a class="twitter_link" href="http://twitter.com/@morgankeys">@morgankeys</a></li>
+					<li><a class="linkedin_link" href="https://www.linkedin.com/in/morgankeys">LinkedIn</a></li>
+					<li><a class="resume_link" href="https://www.dropbox.com/s/2gt7lk8dbhbpdg2/mkeys_resume_2014.pdf" title="Download my resume">Resume</a></li>
 				</ul>
 				</div>
 			</div>
 
-			<div id="work_container" class="container" >
-				<div id="work_highlights" class="col-md-12">
+			<div class="work_container container" >
+				<div class="work_highlights col-md-12">
 					{% block sections %}{% endblock %}
 				</div>
 			</div>
-			<div id="footer_row" class="container">
+			<div class="footer_row container">
 				<div class="row">
 					<aside class="col-md-10 col-md-offset-1">
 						<p class="emphasis">This site was hand crafted by yours-truly. Controller built with <a href="https://github.com/mitsuhiko/flask">Flask</a>. Front-end built with <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://github.com/jquery/">Jquery</a>, and <a href="https://github.com/Prinzhorn/skrollr">Skrollr</a>. Take at look at the code <a href="https://github.com/morgankeys/myflaskportfolio/tree/heroku_branch">here</a>.</p>
@@ -60,7 +60,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="btm_links" data-start="opacity:0" data-100-end="opacity:0" data-end="opacity:1">
+		<div class="btm_links" data-start="opacity:0" data-100-end="opacity:0" data-end="opacity:1">
 			<ul>
 				<li><a href="http://twitter.com/@morgankeys">@morgankeys</a></li>
 				<li><a href="https://www.linkedin.com/in/morgankeys">LinkedIn</a></li>
