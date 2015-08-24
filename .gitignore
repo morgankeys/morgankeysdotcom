@@ -1,6 +1,7 @@
-.pyc
 *.psd
 *.ai
 venv/
 static/oldimgs
 .DS_Store
+*.pyc
+
