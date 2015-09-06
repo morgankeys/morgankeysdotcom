@@ -6,14 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/bootstrap.min.css') }}" />
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap/dist/css/bootstrap.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='node_modules/bootstrap/dist/css/bootstrap.min.css') }}" />
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style.css') }}" />
 	{% block page_css %}{% endblock %}
 
 	<!-- Scripts -->
-	<script src="{{ url_for('static', filename='js/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
-	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" type="text/javascript"></script>
+	<script src="{{ url_for('static', filename='node_modules/jquery/dist/jquery.min.js') }}" type="text/javascript"></script>
+	<script src="{{ url_for('static', filename='node_modules/bootstrap/dist/js/bootstrap.min.js') }}" type="text/javascript"></script>
 	{% block page_scripts %}{% endblock %}
 
 	<!-- Google Analytics -->

@@ -69,20 +69,8 @@
 		</div>
 	</div>
 
-	<!-- an experimental lightbox>
-	<div id="lb_reporting" class="lightbox">
-		<div id="lb_container" class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<img src="/static/imgs/usageReport_improve_cropped.png">
-				</div>
-			</div>
-		</div>
-	</div -->
-
-
 	<!-- script type="text/javascript" src="static/js/skrollr.stylesheets.min.js"></script -->
-	<script type="text/javascript" src="static/js/skrollr.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='node_modules/skrollr/dist/skrollr.min.js') }}"></script>
 	<script>
 		$(document).ready(function(){
 			//Initialize Skrollr

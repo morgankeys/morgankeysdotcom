@@ -4,7 +4,8 @@
   "description": "My personal portfolio site.",
   "main": "myPortfolio.py",
   "scripts": {
-    "start": ". venv/bin/activate && python myPortfolio.py"
+    "start": ". venv/bin/activate && python myPortfolio.py",
+    "install": "cd static && npm install"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,5 @@
   "bugs": {
     "url": "https://github.com/morgankeys/morgankeysdotcom/issues"
   },
-  "homepage": "https://github.com/morgankeys/morgankeysdotcom#readme",
-  "dependencies": {
-    "bootstrap": "^3.3.5",
-    "jquery": "^2.1.4",
-    "skrollr": "^0.6.26"
-  }
+  "homepage": "https://github.com/morgankeys/morgankeysdotcom#readme"
 }

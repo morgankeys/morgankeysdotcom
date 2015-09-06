@@ -6,3 +6,4 @@ static/oldimgs
 *.pyc
 npm-debug.log
 node_modules/
+static/node_modules
