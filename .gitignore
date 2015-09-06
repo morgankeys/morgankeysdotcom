@@ -5,3 +5,4 @@ static/oldimgs
 .DS_Store
 *.pyc
 npm-dbug.log
+node_modules/
