@@ -157,8 +157,7 @@ body{
 		.videoWrapper {
 			position: relative;
 			padding-bottom: 42.85%; /* 21:9  16:9 = 56.25%*/
-			height: 0;
-			
+			height: 50%;			
 		}
 		.videoWrapper iframe {
 			position: absolute;
@@ -171,6 +170,9 @@ body{
 		.visual{
 			/*top:50%;
 			-webkit-transform:translateY(50%);*/
+			padding: 15px;
+			padding-top: 0px;
+
 		}
 
 		iframe{
@@ -196,9 +198,6 @@ body{
 			h3{
 				margin-top: 30px;
 				line-height: 32px;
-			}
-			iframe{
-				margin-top:40px;
 			}
 			img{
 				margin: 40px auto;
