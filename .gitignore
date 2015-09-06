@@ -4,5 +4,5 @@ venv/
 static/oldimgs
 .DS_Store
 *.pyc
-npm-dbug.log
+npm-debug.log
 node_modules/
