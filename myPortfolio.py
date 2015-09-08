@@ -3,20 +3,11 @@
 #Adapted from Flask tutorials. See: http://flask.pocoo.org/
 
 # all the imports
-import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
 # import templating
 from jinja2 import Template
 from jinja2 import Environment, PackageLoader
-
-# DB configuration
-DATABASE = '/tmp/portfolio.db'
-DEBUG = True
-SECRET_KEY = 'development key'
-USERNAME = 'admin'
-PASSWORD = 'default'
-
 
 # create our little application :)
 app = Flask(__name__)
@@ -35,11 +26,23 @@ env = Environment(loader=PackageLoader('myPortfolio', 'templates'))
 @app.route('/')
 @app.route('/about')
 def portfolio():
-	return render_template('portfolio.html')
+	return render_template('default_sections.html')
 
 @app.route('/style')
 def styleguide():
 	return render_template('styleguide.html')
+
+#404/bad-link
+@app.route('/test_404_error')
+@app.errorhandler(404)
+def page_not_found_404(e):
+    return render_template('error.html'), 404
+
+#500/server error
+@app.route('/test_500_error')
+@app.errorhandler(500)
+def page_not_found_500(e):
+    return render_template('error.html'), 500
 
 if __name__ == '__main__':
     app.run()

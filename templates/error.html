@@ -1,0 +1,46 @@
+{% extends "global.html" %}
+
+{% block metadata %}
+	<title>Nothing here...</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<!-- OpenGraph -->
+	<meta property="og:title" content="Morgan Keys" />
+	<meta property="og:image" content="http://www.morgankeys.com/static/imgs/door_pic_small.png" />
+	<meta property="og:url" content="http://www.morgankeys.com" />
+	<meta property="og:description" content="Hi, I'm Morgan. I'm a user experience designer who loves decision science, complex adaptive systems, and people. Most of all people. Take a look around and then let's chat." />
+{% endblock %}
+
+{% block page_css %}
+	<style>
+		.error_headline{
+			text-align: center;
+		}
+		h2{margin:150px 0px 100px 0px;} 
+		p{
+			margin:100px 0px 100px 0px;
+			font-size: 18px;
+		}
+		p.emphasis{
+			font-size: 14px;
+			opacity: .5;
+		}
+	</style>
+{% endblock %}
+
+{% block page_scripts %}
+	<!-- no special scripts here -->
+{% endblock %}
+
+{% block page_body %}
+<body>
+<div class="container">
+	<div class="error_headline col-md-8 col-md-offset-2">
+		<h2>Hmm... There's something wrong with the link up there. </h2>
+
+		<p>Sorry about that. I'd recommend checking the spelling or just going back to the <a href="/">home page</a>.
+		</p>
+		<p class="emphasis">If you keep getting this page, I may have made a bad commit or something. Do me a solid and email me about it: <a href='mailto:morgankeys+portfolio@gmail.com'>morgan.keys@gmail.com</a>.</p>
+	</div>
+</div>
+</body>
+{% endblock %}

@@ -1,0 +1,25 @@
+{
+  "name": "morgankeysdotcom",
+  "version": "1.0.0",
+  "description": "My personal portfolio site.",
+  "main": "myPortfolio.py",
+  "scripts": {
+    "start": ". venv/bin/activate && python myPortfolio.py",
+    "install": "cd static && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morgankeys/morgankeysdotcom.git"
+  },
+  "keywords": [
+    "portfolio",
+    "morgan",
+    "keys"
+  ],
+  "author": "Morgan Keys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morgankeys/morgankeysdotcom/issues"
+  },
+  "homepage": "https://github.com/morgankeys/morgankeysdotcom#readme"
+}
