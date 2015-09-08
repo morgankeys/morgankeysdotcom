@@ -12,13 +12,6 @@ from jinja2 import Environment, PackageLoader
 # create our little application :)
 app = Flask(__name__)
 
-#app.config.from_object(__name__)
-app.config.from_envvar('portfolio_settings', silent=True)
-
-#connect to database
-def connect_db():
-    return sqlite3.connect(app.config['DATABASE'])
-
 #Create templating central object
 env = Environment(loader=PackageLoader('myPortfolio', 'templates'))
 
