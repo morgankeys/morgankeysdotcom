@@ -13,13 +13,22 @@
 {% endblock %}
 {% block page_scripts %}
 	<script src="{{ url_for('static', filename='js/portfolio.js') }}" type="text/javascript"></script>
-	<script>
-
-	</script>
 {% endblock %}
 {% block page_body %}
 <body data-start="height:100%;">
-	<div class="color_band"></div>
+	
+
+	<header class="header_row" data-start="opacity:0.0;" data-100="opacity:1.0;">
+		<div class="container">
+		<div class="col-md-8"><h1 id="skrollrtest">morgan keys</h1></div>
+			<ul class="col-md-4 clearfix">
+				<li><a class="twitter_link" href="http://twitter.com/@morgankeys">@morgankeys</a></li>
+				<li><a class="linkedin_link" href="https://www.linkedin.com/in/morgankeys">LinkedIn</a></li>
+				<li><a class="resume_link" href="https://www.dropbox.com/s/2gt7lk8dbhbpdg2/mkeys_resume_2014.pdf" title="Download my resume">Resume</a></li>
+			</ul>
+		</div>
+	</header>
+
 	<div id="skrollr-body">
 		<div class="door-pic" data-top="background-position-y:0px;" data-top-bottom="background-position-y[sqrt]:-150px;">
 			<div  class="headliner container" data-start="top:25%; opacity:1.0;" data-100="top[sqrt]:0%; opacity:0.0;">
@@ -32,18 +41,7 @@
 		</div>
 
 		<div class="shelf" data-bottom-top="top:0px"  data-top-top="top[sqrt]:-400px">
-
-			<div class="header_row">
-				<div class="header_row_inner container">
-				<div class="col-md-8"><h1 id="skrollrtest">morgan keys</h1></div>
-				<ul class="col-md-4 clearfix">
-					<li><a class="twitter_link" href="http://twitter.com/@morgankeys">@morgankeys</a></li>
-					<li><a class="linkedin_link" href="https://www.linkedin.com/in/morgankeys">LinkedIn</a></li>
-					<li><a class="resume_link" href="https://www.dropbox.com/s/2gt7lk8dbhbpdg2/mkeys_resume_2014.pdf" title="Download my resume">Resume</a></li>
-				</ul>
-				</div>
-			</div>
-
+			<div class="color_band"></div>
 			<div class="work_container container" >
 				<div class="work_highlights col-md-12">
 					{% block sections %}{% endblock %}
