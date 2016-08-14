@@ -2,10 +2,10 @@
   "name": "morgankeysdotcom",
   "version": "1.0.0",
   "description": "My personal portfolio site.",
-  "main": "myPortfolio.py",
+  "main": "index.py",
   "scripts": {
-    "start": ". venv/bin/activate && python myPortfolio.py",
-    "install": "cd static && npm install"
+    "start": ". venv/bin/activate && python index.py",
+    "install": ". venv/bin/activate && pip install flask && cd static && npm install"
   },
   "repository": {
     "type": "git",
