@@ -45,7 +45,7 @@ $tertiary_font: Georgia, serif;
 	z-index:-1;
 	display: inline-block;
 	background: $bg_color url("/static/imgs/door_pic_small.png") no-repeat center;
-	background-size: cover; 
+	background-size: cover;
 }
 
 body{
@@ -110,7 +110,7 @@ body{
 	}
 }
 
-.shelf{	
+.shelf{
 	background-color: #333;
 	@include extendright;
 	@include extendleft;
@@ -124,9 +124,9 @@ body{
 	}
 	section{
 		&:first-child{
-			padding-top: 90px;
+			padding-top: 50px;
 		}
-		padding: 200px 0px;
+		padding: 100px 0px;
 		/* 1.0 Normal size */
 
 
@@ -138,7 +138,7 @@ body{
 				height: 550px;
 			}
 		}
-		
+
 		h3,p{
 			margin: 0px 0px 20px 0px;
 
@@ -157,7 +157,7 @@ body{
 		.videoWrapper {
 			position: relative;
 			padding-bottom: 42.85%; /* 21:9  16:9 = 56.25%*/
-			height: 50%;			
+			height: 50%;
 		}
 		.videoWrapper iframe {
 			position: absolute;
@@ -208,7 +208,7 @@ body{
 
 .footer_row{
 	opacity: .5;
-	padding-top:400px;
+	padding-top:100px;
 	padding-bottom:100px;
 	text-align: center;
 	aside{
@@ -225,7 +225,7 @@ body{
 
 .btm_links{
 	position: relative;
-	bottom: 80px;
+	bottom: 200px;
 	width: 100%;
 	text-align: center;
 	ul{

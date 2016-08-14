@@ -7,3 +7,5 @@ static/oldimgs
 npm-debug.log
 node_modules/
 static/node_modules
+.sass-cache
+*.css.map
