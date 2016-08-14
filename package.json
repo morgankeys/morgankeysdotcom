@@ -5,7 +5,7 @@
   "main": "index.py",
   "scripts": {
     "start": ". venv/bin/activate && python index.py",
-    "install": ". venv/bin/activate && pip install flask && cd static && npm install"
+    "install": "virtualenv venv && . venv/bin/activate && pip install flask && cd static && npm install"
   },
   "repository": {
     "type": "git",
