@@ -18,8 +18,7 @@
   background-size: cover; }
 
 body {
-  overflow-x: hidden;
-  height: 100% !important; }
+  overflow-x: hidden; }
 
 .color_band {
   position: fixed;

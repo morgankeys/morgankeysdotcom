@@ -50,7 +50,6 @@ $tertiary_font: Georgia, serif;
 
 body{
 	overflow-x:hidden;
-	height: 100% !important; //Dirty hack to prevent Skrollr from screwing up height on init.
 }
 
 .color_band{
