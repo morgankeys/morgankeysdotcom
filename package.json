@@ -4,8 +4,8 @@
   "description": "My personal portfolio site.",
   "main": "index.py",
   "scripts": {
-    "start": ". venv/bin/activate && python index.py",
-    "install": "virtualenv venv && . venv/bin/activate && pip install flask && cd static && npm install"
+    "start": "python index.py",
+    "install": "pip install flask && cd static && npm install"
   },
   "repository": {
     "type": "git",
