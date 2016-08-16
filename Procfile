@@ -1,1 +1,1 @@
-web: gunicorn myPortfolio:app --log-file -
+web: gunicorn index:app --log-file -

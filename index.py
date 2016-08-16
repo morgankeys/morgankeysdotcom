@@ -13,7 +13,7 @@ from jinja2 import Environment, PackageLoader
 app = Flask(__name__)
 
 #Create templating central object
-env = Environment(loader=PackageLoader('myPortfolio', 'templates'))
+env = Environment(loader=PackageLoader('index', 'templates'))
 
 #Home page
 @app.route('/')
