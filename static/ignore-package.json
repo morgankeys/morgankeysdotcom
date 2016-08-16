@@ -1,11 +1,11 @@
 {
   "name": "morgankeysdotcom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My personal portfolio site.",
-  "main": "myPortfolio.py",
-  "scripts": {
-    "start": ". venv/bin/activate && python myPortfolio.py",
-    "install": "cd static && npm install"
+  "main": "../index.py",
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4"
   },
   "repository": {
     "type": "git",

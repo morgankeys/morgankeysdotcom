@@ -18,8 +18,7 @@
   background-size: cover; }
 
 body {
-  overflow-x: hidden;
-  height: 100% !important; }
+  overflow-x: hidden; }
 
 .color_band {
   position: fixed;
@@ -79,11 +78,11 @@ body {
     .shelf .work_highlights h2 {
       display: inline-block; }
   .shelf section {
-    padding: 200px 0px;
+    padding: 100px 0px;
     /* 1.0 Normal size */
     /* For thin screens sizes */ }
     .shelf section:first-child {
-      padding-top: 90px; }
+      padding-top: 50px; }
     .shelf section .carousel .arrow {
       font-size: 32px; }
     .shelf section .carousel .item {
@@ -141,7 +140,7 @@ body {
 
 .footer_row {
   opacity: .5;
-  padding-top: 400px;
+  padding-top: 100px;
   padding-bottom: 100px;
   text-align: center; }
   .footer_row aside {
@@ -154,7 +153,7 @@ body {
 
 .btm_links {
   position: relative;
-  bottom: 80px;
+  padding-bottom: 200px;
   width: 100%;
   text-align: center; }
   .btm_links ul li {

@@ -5,5 +5,5 @@ static/oldimgs
 .DS_Store
 *.pyc
 npm-debug.log
-node_modules/
-static/node_modules
+.sass-cache
+*.css.map
