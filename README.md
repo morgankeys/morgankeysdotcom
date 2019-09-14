@@ -18,6 +18,7 @@ You can see it running live here: http://morgankeys.com/
 - `npm install` tries to set everything up. It simply runs `virtualenv venv && . venv/bin/activate && pip install flask && cd static && npm install`
 - (`. venv/bin/activate` starts the local environment.)
 - Once in the proper environment, simply run `npm start` (`python morgankeysdotcom.py`)
+- Use `$ deactivate` to deactivate virtualenv.
 
 # GOTCHAS
 - Uses Python 2.7 and pip
